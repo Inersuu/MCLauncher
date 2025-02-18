@@ -18,7 +18,7 @@ def launch_game(version_id,username,MB):
         "-cp", classpath,
         f"-Xms{MB}M",
         f"-Xmx{MB}M",
-        f"-javaagent:F:/Project/test/versions/{version_id}/fakeauthlib/authlib-injector-1.2.5.jar=ely.by",
+        f"-javaagent:versions/{version_id}/fakeauthlib/authlib-injector-1.2.5.jar=ely.by",
         main_class,
         "--gameDir", game_dir,
         "--assetsDir", assets_dir,
